@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<!--
+-->
+<plugin>
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <!-- @generated simplepetrinetTrace -->
+    <package uri="simplepetrinetTrace" class="simplepetrinetTrace.SimplepetrinetTracePackage" genModel="model/simplepetrinetTrace.genmodel" />
+  </extension>
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <!-- @generated simplepetrinetTrace -->
+    <package uri="simplepetrinetTrace_Steps" class="simplepetrinetTrace.Steps.StepsPackage" genModel="model/simplepetrinetTrace.genmodel" />
+  </extension>
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <!-- @generated simplepetrinetTrace -->
+    <package uri="simplepetrinetTrace_States" class="simplepetrinetTrace.States.StatesPackage" genModel="model/simplepetrinetTrace.genmodel" />
+  </extension>
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <!-- @generated simplepetrinetTrace -->
+    <package uri="simplepetrinetTrace_simplepetrinet" class="simplepetrinetTrace.States.simplepetrinet.SimplepetrinetPackage" genModel="model/simplepetrinetTrace.genmodel" />
+  </extension>
+  <extension point="org.gemoc.gemoc_language_workbench.engine_addon">
+    <Addon Class="fr.inria.diverse.sample.simplepetrinet.trace.tracemanager.SimplepetrinetTraceEngineAddon" Default="false" id="fr.inria.diverse.sample.simplepetrinet.trace" Name="simplepetrinet MultiDimensional Trace" ShortDescription="MultiDimensional Trace support dedicated to simplepetrinet language" />
+  </extension>
+</plugin>

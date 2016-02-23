@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Semantics
+Bundle-SymbolicName: fr.inria.diverse.sample.simplepetrinet.semantics
+Bundle-Version: 1.0.0.qualifier
+Export-Package: fr.inria.diverse.sample.simplepetrinet.semantics
+Require-Bundle: fr.inria.diverse.sample.simplepetrinet.model;bundle-version="0.1.0",
+ fr.inria.diverse.k3.al.annotationprocessor.plugin;bundle-version="3.2.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

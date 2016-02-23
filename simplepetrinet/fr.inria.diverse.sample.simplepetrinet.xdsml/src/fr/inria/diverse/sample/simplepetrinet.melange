@@ -1,0 +1,11 @@
+package fr.inria.diverse.sample
+
+language Simplepetrinet {
+	syntax "platform:/resource//fr.inria.diverse.sample.simplepetrinet.model/model/simplepetrinet.ecore"
+	
+	with fr.inria.diverse.sample.simplepetrinet.semantics.NetAspect
+	with fr.inria.diverse.sample.simplepetrinet.semantics.TransitionAspect
+	with fr.inria.diverse.sample.simplepetrinet.semantics.PlaceAspect
+
+	exactType SimplepetrinetMT
+}

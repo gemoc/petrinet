@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/fr.inria.diverse.sample.simplepetrinet.model/src"
+    modelPluginID="fr.inria.diverse.sample.simplepetrinet.model" modelName="Simplepetrinet"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="8.0" copyrightFields="false" usedGenPackages="../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>simplepetrinet.ecore</foreignModel>
+  <genPackages prefix="Simplepetrinet" disposableProviderFactory="true" ecorePackage="simplepetrinet.ecore#/">
+    <genClasses ecoreClass="simplepetrinet.ecore#//Net">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simplepetrinet.ecore#//Net/places"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simplepetrinet.ecore#//Net/transitions"/>
+    </genClasses>
+    <genClasses ecoreClass="simplepetrinet.ecore#//Transition">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference simplepetrinet.ecore#//Transition/inputs"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference simplepetrinet.ecore#//Transition/outputs"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simplepetrinet.ecore#//Transition/name"/>
+    </genClasses>
+    <genClasses ecoreClass="simplepetrinet.ecore#//Place">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simplepetrinet.ecore#//Place/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simplepetrinet.ecore#//Place/initialTokens"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

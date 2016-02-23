@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="ASCII"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/fr.inria.diverse.sample.simplepetrinet.trace/src" modelPluginID="fr.inria.diverse.sample.simplepetrinet.trace" modelName="SimplepetrinetTrace" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>file:/tmp/diverse2824874801196206197tracemmgeneration/simplepetrinetTrace.ecore</foreignModel>
+  <genPackages prefix="SimplepetrinetTrace" disposableProviderFactory="true">
+    <ecorePackage href="simplepetrinetTrace.ecore#/"/>
+    <genClasses>
+      <ecoreClass href="simplepetrinetTrace.ecore#//Trace"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="simplepetrinetTrace.ecore#//Trace/Simplepetrinet_Net_Initialize_Sequence"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="simplepetrinetTrace.ecore#//Trace/Simplepetrinet_Transition_Fire_Sequence"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="simplepetrinetTrace.ecore#//Trace/rootSteps"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="simplepetrinetTrace.ecore#//Trace/simplepetrinet_tracedPlaces"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="simplepetrinetTrace.ecore#//Trace/statesTrace"/>
+      </genFeatures>
+    </genClasses>
+    <nestedGenPackages prefix="Steps" disposableProviderFactory="true">
+      <ecorePackage href="simplepetrinetTrace.ecore#//Steps"/>
+      <genClasses image="false">
+        <ecoreClass href="simplepetrinetTrace.ecore#//Steps/BigStep"/>
+      </genClasses>
+      <genClasses>
+        <ecoreClass href="simplepetrinetTrace.ecore#//Steps/RootImplicitStep"/>
+      </genClasses>
+      <genClasses>
+        <ecoreClass href="simplepetrinetTrace.ecore#//Steps/Simplepetrinet_Net_Initialize"/>
+        <genOperations>
+          <ecoreOperation href="simplepetrinetTrace.ecore#//Steps/Simplepetrinet_Net_Initialize/getCaller"/>
+        </genOperations>
+      </genClasses>
+      <genClasses>
+        <ecoreClass href="simplepetrinetTrace.ecore#//Steps/Simplepetrinet_Transition_Fire"/>
+        <genOperations>
+          <ecoreOperation href="simplepetrinetTrace.ecore#//Steps/Simplepetrinet_Transition_Fire/getCaller"/>
+        </genOperations>
+      </genClasses>
+      <genClasses image="false">
+        <ecoreClass href="simplepetrinetTrace.ecore#//Steps/SmallStep"/>
+      </genClasses>
+      <genClasses image="false">
+        <ecoreClass href="simplepetrinetTrace.ecore#//Steps/Step"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true">
+          <ecoreFeature xsi:type="ecore:EReference" href="simplepetrinetTrace.ecore#//Steps/Step/endingState"/>
+        </genFeatures>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true">
+          <ecoreFeature xsi:type="ecore:EReference" href="simplepetrinetTrace.ecore#//Steps/Step/startingState"/>
+        </genFeatures>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="States" disposableProviderFactory="true">
+      <ecorePackage href="simplepetrinetTrace.ecore#//States"/>
+      <genClasses>
+        <ecoreClass href="simplepetrinetTrace.ecore#//States/Place_tokens_Value"/>
+        <genFeatures property="None" notify="false" createChild="false">
+          <ecoreFeature xsi:type="ecore:EReference" href="simplepetrinetTrace.ecore#//States/Place_tokens_Value/parent"/>
+        </genFeatures>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true">
+          <ecoreFeature xsi:type="ecore:EReference" href="simplepetrinetTrace.ecore#//States/Place_tokens_Value/states"/>
+        </genFeatures>
+        <genFeatures createChild="false">
+          <ecoreFeature xsi:type="ecore:EAttribute" href="simplepetrinetTrace.ecore#//States/Place_tokens_Value/tokens"/>
+        </genFeatures>
+      </genClasses>
+      <genClasses>
+        <ecoreClass href="simplepetrinetTrace.ecore#//States/State"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true">
+          <ecoreFeature xsi:type="ecore:EReference" href="simplepetrinetTrace.ecore#//States/State/endedSteps"/>
+        </genFeatures>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true">
+          <ecoreFeature xsi:type="ecore:EReference" href="simplepetrinetTrace.ecore#//States/State/place_tokens_Values"/>
+        </genFeatures>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true">
+          <ecoreFeature xsi:type="ecore:EReference" href="simplepetrinetTrace.ecore#//States/State/startedSteps"/>
+        </genFeatures>
+      </genClasses>
+      <nestedGenPackages prefix="Simplepetrinet" disposableProviderFactory="true">
+        <ecorePackage href="simplepetrinetTrace.ecore#//States/simplepetrinet"/>
+        <genClasses>
+          <ecoreClass href="simplepetrinetTrace.ecore#//States/simplepetrinet/TracedPlace"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true">
+            <ecoreFeature xsi:type="ecore:EReference" href="simplepetrinetTrace.ecore#//States/simplepetrinet/TracedPlace/originalObject"/>
+          </genFeatures>
+          <genFeatures property="None" children="true" createChild="true">
+            <ecoreFeature xsi:type="ecore:EReference" href="simplepetrinetTrace.ecore#//States/simplepetrinet/TracedPlace/tokensSequence"/>
+          </genFeatures>
+        </genClasses>
+      </nestedGenPackages>
+    </nestedGenPackages>
+  </genPackages>
+  <usedGenPackages href="../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore"/>
+  <usedGenPackages href="../../org.gemoc.executionframework.engine.mse.model/model/GemocExecutionEngineMSE.genmodel#//mse"/>
+  <usedGenPackages href="../../fr.inria.diverse.sample.simplepetrinet.model/model/simplepetrinet.genmodel#//simplepetrinet"/>
+</genmodel:GenModel>

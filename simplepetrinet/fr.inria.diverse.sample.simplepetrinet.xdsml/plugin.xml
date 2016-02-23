@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+  <extension point="org.gemoc.gemoc_language_workbench.sequential.xdsml">
+    <XDSML_Definition modelLoader_class="org.gemoc.executionframework.extensions.sirius.modelloader.DefaultModelLoader" name="fr.inria.diverse.sample.Simplepetrinet" xdsmlFilePath="/fr.inria.diverse.sample.simplepetrinet.xdsml/bin/fr/inria/diverse/sample/simplepetrinet.melange" />
+  </extension>
+  <extension point="fr.inria.diverse.melange.modeltype">
+    <modeltype id="fr.inria.diverse.sample.SimplepetrinetMT" uri="http://simplepetrinetmt/" />
+  </extension>
+  <extension point="fr.inria.diverse.melange.language">
+    <language aspects="Transition:fr.inria.diverse.sample.simplepetrinet.semantics.TransitionAspect;Net:fr.inria.diverse.sample.simplepetrinet.semantics.NetAspect;Place:fr.inria.diverse.sample.simplepetrinet.semantics.PlaceAspect" entryPoints="fr.inria.diverse.sample.simplepetrinet.semantics.NetAspect.run(simplepetrinet.Net)" exactType="fr.inria.diverse.sample.SimplepetrinetMT" id="fr.inria.diverse.sample.Simplepetrinet" uri="http://simplepetrinetmt/">
+      <adapter class="fr.inria.diverse.sample.simplepetrinet.adapters.simplepetrinetmt.SimplepetrinetAdapter" modeltypeId="fr.inria.diverse.sample.SimplepetrinetMT" />
+    </language>
+  </extension>
+</plugin>

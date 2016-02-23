@@ -1,0 +1,102 @@
+/**
+ */
+package simplepetrinetTrace.States;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EObject;
+
+import simplepetrinetTrace.States.simplepetrinet.TracedPlace;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Place tokens Value</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * <ul>
+ *   <li>{@link simplepetrinetTrace.States.Place_tokens_Value#getParent <em>Parent</em>}</li>
+ *   <li>{@link simplepetrinetTrace.States.Place_tokens_Value#getStates <em>States</em>}</li>
+ *   <li>{@link simplepetrinetTrace.States.Place_tokens_Value#getTokens <em>Tokens</em>}</li>
+ * </ul>
+ * </p>
+ *
+ * @see simplepetrinetTrace.States.StatesPackage#getPlace_tokens_Value()
+ * @model annotation="http://www.modelexecution.org/trace/XMOF executionMetamodelElement='null'"
+ * @generated
+ */
+public interface Place_tokens_Value extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Parent</b></em>' container reference.
+	 * It is bidirectional and its opposite is '{@link simplepetrinetTrace.States.simplepetrinet.TracedPlace#getTokensSequence <em>Tokens Sequence</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Parent</em>' container reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Parent</em>' container reference.
+	 * @see #setParent(TracedPlace)
+	 * @see simplepetrinetTrace.States.StatesPackage#getPlace_tokens_Value_Parent()
+	 * @see simplepetrinetTrace.States.simplepetrinet.TracedPlace#getTokensSequence
+	 * @model opposite="tokensSequence" required="true" transient="false"
+	 * @generated
+	 */
+	TracedPlace getParent();
+
+	/**
+	 * Sets the value of the '{@link simplepetrinetTrace.States.Place_tokens_Value#getParent <em>Parent</em>}' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Parent</em>' container reference.
+	 * @see #getParent()
+	 * @generated
+	 */
+	void setParent(TracedPlace value);
+
+	/**
+	 * Returns the value of the '<em><b>States</b></em>' reference list.
+	 * The list contents are of type {@link simplepetrinetTrace.States.State}.
+	 * It is bidirectional and its opposite is '{@link simplepetrinetTrace.States.State#getPlace_tokens_Values <em>Place tokens Values</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>States</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>States</em>' reference list.
+	 * @see simplepetrinetTrace.States.StatesPackage#getPlace_tokens_Value_States()
+	 * @see simplepetrinetTrace.States.State#getPlace_tokens_Values
+	 * @model opposite="place_tokens_Values" required="true"
+	 * @generated
+	 */
+	EList<State> getStates();
+
+	/**
+	 * Returns the value of the '<em><b>Tokens</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Tokens</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Tokens</em>' attribute.
+	 * @see #setTokens(int)
+	 * @see simplepetrinetTrace.States.StatesPackage#getPlace_tokens_Value_Tokens()
+	 * @model
+	 * @generated
+	 */
+	int getTokens();
+
+	/**
+	 * Sets the value of the '{@link simplepetrinetTrace.States.Place_tokens_Value#getTokens <em>Tokens</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Tokens</em>' attribute.
+	 * @see #getTokens()
+	 * @generated
+	 */
+	void setTokens(int value);
+
+} // Place_tokens_Value
