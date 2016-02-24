@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated petrinetv1 -->
+      <package
+            uri="petrinetv1"
+            class="petrinetv1.PetrinetV1Package"
+            genModel="model/petrinetv1.genmodel"/>
+   </extension>
+
+</plugin>

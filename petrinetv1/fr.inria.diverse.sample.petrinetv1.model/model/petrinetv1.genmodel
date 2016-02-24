@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/fr.inria.diverse.sample.petrinetv1.model/src"
+    modelPluginID="fr.inria.diverse.sample.petrinetv1.model" modelName="PetrinetV1"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="8.0" copyrightFields="false" usedGenPackages="../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>petrinetv1.ecore</foreignModel>
+  <genPackages prefix="PetrinetV1" disposableProviderFactory="true" ecorePackage="petrinetv1.ecore#/">
+    <genClasses ecoreClass="petrinetv1.ecore#//Net">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference petrinetv1.ecore#//Net/places"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference petrinetv1.ecore#//Net/transitions"/>
+    </genClasses>
+    <genClasses ecoreClass="petrinetv1.ecore#//Transition">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference petrinetv1.ecore#//Transition/inputs"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference petrinetv1.ecore#//Transition/outputs"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute petrinetv1.ecore#//Transition/name"/>
+    </genClasses>
+    <genClasses ecoreClass="petrinetv1.ecore#//Place">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute petrinetv1.ecore#//Place/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute petrinetv1.ecore#//Place/initialTokens"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
