@@ -1,4 +1,4 @@
-package fr.inria.diverse.sample.petrinetv1.petrinetv1.trace.tracemanager;
+package fr.inria.diverse.sample.petrinetv1.trace.tracemanager;
 
 import fr.inria.diverse.trace.api.IValueTrace;
 import fr.inria.diverse.trace.api.impl.GenericValueTrace;

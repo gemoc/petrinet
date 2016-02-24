@@ -1,4 +1,4 @@
-package fr.inria.diverse.sample.petrinetv1.petrinetv1.trace.tracemanager;
+package fr.inria.diverse.sample.petrinetv1.trace.tracemanager;
 
 import fr.inria.diverse.trace.gemoc.traceaddon.AbstractTraceAddon;
 import fr.inria.diverse.trace.gemoc.api.IStepFactory;
