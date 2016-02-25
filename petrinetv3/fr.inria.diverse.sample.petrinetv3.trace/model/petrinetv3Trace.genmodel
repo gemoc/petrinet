@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="ASCII"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/fr.inria.diverse.sample.petrinetv3.trace/src" modelPluginID="fr.inria.diverse.sample.petrinetv3.trace" modelName="Petrinetv3Trace" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>file:/tmp/diverse1590026687332513973tracemmgeneration/petrinetv3Trace.ecore</foreignModel>
+  <genPackages prefix="Petrinetv3Trace" disposableProviderFactory="true">
+    <ecorePackage href="petrinetv3Trace.ecore#/"/>
+    <genClasses>
+      <ecoreClass href="petrinetv3Trace.ecore#//Trace"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="petrinetv3Trace.ecore#//Trace/Petrinetv3_Net_Initialize_Sequence"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="petrinetv3Trace.ecore#//Trace/Petrinetv3_Net_Run_Sequence"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="petrinetv3Trace.ecore#//Trace/Petrinetv3_Net_TickEnabledTransitions_Sequence"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="petrinetv3Trace.ecore#//Trace/Petrinetv3_Transition_Fire_Sequence"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="petrinetv3Trace.ecore#//Trace/petrinetv3_tracedPlaces"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="petrinetv3Trace.ecore#//Trace/petrinetv3_tracedTokens"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="petrinetv3Trace.ecore#//Trace/petrinetv3_tracedTransitions"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="petrinetv3Trace.ecore#//Trace/rootSteps"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="petrinetv3Trace.ecore#//Trace/statesTrace"/>
+      </genFeatures>
+    </genClasses>
+    <nestedGenPackages prefix="Steps" disposableProviderFactory="true">
+      <ecorePackage href="petrinetv3Trace.ecore#//Steps"/>
+      <genClasses image="false">
+        <ecoreClass href="petrinetv3Trace.ecore#//Steps/BigStep"/>
+      </genClasses>
+      <genClasses>
+        <ecoreClass href="petrinetv3Trace.ecore#//Steps/Petrinetv3_Net_Initialize"/>
+        <genOperations>
+          <ecoreOperation href="petrinetv3Trace.ecore#//Steps/Petrinetv3_Net_Initialize/getCaller"/>
+        </genOperations>
+      </genClasses>
+      <genClasses>
+        <ecoreClass href="petrinetv3Trace.ecore#//Steps/Petrinetv3_Net_Run"/>
+        <genFeatures property="None" children="true" createChild="true">
+          <ecoreFeature xsi:type="ecore:EReference" href="petrinetv3Trace.ecore#//Steps/Petrinetv3_Net_Run/subSteps"/>
+        </genFeatures>
+        <genOperations>
+          <ecoreOperation href="petrinetv3Trace.ecore#//Steps/Petrinetv3_Net_Run/getCaller"/>
+        </genOperations>
+      </genClasses>
+      <genClasses image="false">
+        <ecoreClass href="petrinetv3Trace.ecore#//Steps/Petrinetv3_Net_Run_AbstractSubStep"/>
+      </genClasses>
+      <genClasses>
+        <ecoreClass href="petrinetv3Trace.ecore#//Steps/Petrinetv3_Net_Run_ImplicitStep"/>
+      </genClasses>
+      <genClasses>
+        <ecoreClass href="petrinetv3Trace.ecore#//Steps/Petrinetv3_Net_TickEnabledTransitions"/>
+        <genOperations>
+          <ecoreOperation href="petrinetv3Trace.ecore#//Steps/Petrinetv3_Net_TickEnabledTransitions/getCaller"/>
+        </genOperations>
+      </genClasses>
+      <genClasses>
+        <ecoreClass href="petrinetv3Trace.ecore#//Steps/Petrinetv3_Transition_Fire"/>
+        <genOperations>
+          <ecoreOperation href="petrinetv3Trace.ecore#//Steps/Petrinetv3_Transition_Fire/getCaller"/>
+        </genOperations>
+      </genClasses>
+      <genClasses>
+        <ecoreClass href="petrinetv3Trace.ecore#//Steps/RootImplicitStep"/>
+      </genClasses>
+      <genClasses image="false">
+        <ecoreClass href="petrinetv3Trace.ecore#//Steps/SmallStep"/>
+      </genClasses>
+      <genClasses image="false">
+        <ecoreClass href="petrinetv3Trace.ecore#//Steps/Step"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true">
+          <ecoreFeature xsi:type="ecore:EReference" href="petrinetv3Trace.ecore#//Steps/Step/endingState"/>
+        </genFeatures>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true">
+          <ecoreFeature xsi:type="ecore:EReference" href="petrinetv3Trace.ecore#//Steps/Step/startingState"/>
+        </genFeatures>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="States" disposableProviderFactory="true">
+      <ecorePackage href="petrinetv3Trace.ecore#//States"/>
+      <genClasses>
+        <ecoreClass href="petrinetv3Trace.ecore#//States/Place_tokens_Value"/>
+        <genFeatures property="None" notify="false" createChild="false">
+          <ecoreFeature xsi:type="ecore:EReference" href="petrinetv3Trace.ecore#//States/Place_tokens_Value/parent"/>
+        </genFeatures>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true">
+          <ecoreFeature xsi:type="ecore:EReference" href="petrinetv3Trace.ecore#//States/Place_tokens_Value/states"/>
+        </genFeatures>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true">
+          <ecoreFeature xsi:type="ecore:EReference" href="petrinetv3Trace.ecore#//States/Place_tokens_Value/tokens"/>
+        </genFeatures>
+      </genClasses>
+      <genClasses>
+        <ecoreClass href="petrinetv3Trace.ecore#//States/State"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true">
+          <ecoreFeature xsi:type="ecore:EReference" href="petrinetv3Trace.ecore#//States/State/endedSteps"/>
+        </genFeatures>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true">
+          <ecoreFeature xsi:type="ecore:EReference" href="petrinetv3Trace.ecore#//States/State/place_tokens_Values"/>
+        </genFeatures>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true">
+          <ecoreFeature xsi:type="ecore:EReference" href="petrinetv3Trace.ecore#//States/State/startedSteps"/>
+        </genFeatures>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true">
+          <ecoreFeature xsi:type="ecore:EReference" href="petrinetv3Trace.ecore#//States/State/transition_clock_Values"/>
+        </genFeatures>
+      </genClasses>
+      <genClasses>
+        <ecoreClass href="petrinetv3Trace.ecore#//States/Transition_clock_Value"/>
+        <genFeatures createChild="false">
+          <ecoreFeature xsi:type="ecore:EAttribute" href="petrinetv3Trace.ecore#//States/Transition_clock_Value/clock"/>
+        </genFeatures>
+        <genFeatures property="None" notify="false" createChild="false">
+          <ecoreFeature xsi:type="ecore:EReference" href="petrinetv3Trace.ecore#//States/Transition_clock_Value/parent"/>
+        </genFeatures>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true">
+          <ecoreFeature xsi:type="ecore:EReference" href="petrinetv3Trace.ecore#//States/Transition_clock_Value/states"/>
+        </genFeatures>
+      </genClasses>
+      <nestedGenPackages prefix="Petrinetv3" disposableProviderFactory="true">
+        <ecorePackage href="petrinetv3Trace.ecore#//States/petrinetv3"/>
+        <genClasses>
+          <ecoreClass href="petrinetv3Trace.ecore#//States/petrinetv3/TracedPlace"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true">
+            <ecoreFeature xsi:type="ecore:EReference" href="petrinetv3Trace.ecore#//States/petrinetv3/TracedPlace/originalObject"/>
+          </genFeatures>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true">
+            <ecoreFeature xsi:type="ecore:EReference" href="petrinetv3Trace.ecore#//States/petrinetv3/TracedPlace/tokens"/>
+          </genFeatures>
+          <genFeatures property="None" children="true" createChild="true">
+            <ecoreFeature xsi:type="ecore:EReference" href="petrinetv3Trace.ecore#//States/petrinetv3/TracedPlace/tokensSequence"/>
+          </genFeatures>
+        </genClasses>
+        <genClasses>
+          <ecoreClass href="petrinetv3Trace.ecore#//States/petrinetv3/TracedToken"/>
+        </genClasses>
+        <genClasses>
+          <ecoreClass href="petrinetv3Trace.ecore#//States/petrinetv3/TracedTransition"/>
+          <genFeatures property="None" children="true" createChild="true">
+            <ecoreFeature xsi:type="ecore:EReference" href="petrinetv3Trace.ecore#//States/petrinetv3/TracedTransition/clockSequence"/>
+          </genFeatures>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true">
+            <ecoreFeature xsi:type="ecore:EReference" href="petrinetv3Trace.ecore#//States/petrinetv3/TracedTransition/input"/>
+          </genFeatures>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true">
+            <ecoreFeature xsi:type="ecore:EReference" href="petrinetv3Trace.ecore#//States/petrinetv3/TracedTransition/originalObject"/>
+          </genFeatures>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true">
+            <ecoreFeature xsi:type="ecore:EReference" href="petrinetv3Trace.ecore#//States/petrinetv3/TracedTransition/output"/>
+          </genFeatures>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true">
+            <ecoreFeature xsi:type="ecore:EReference" href="petrinetv3Trace.ecore#//States/petrinetv3/TracedTransition/parentNet"/>
+          </genFeatures>
+        </genClasses>
+      </nestedGenPackages>
+    </nestedGenPackages>
+  </genPackages>
+  <usedGenPackages href="../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore"/>
+  <usedGenPackages href="../../org.gemoc.executionframework.engine.mse.model/model/GemocExecutionEngineMSE.genmodel#//mse"/>
+  <usedGenPackages href="../../fr.inria.diverse.sample.petrinetv3.model/model/petrinetv3.genmodel#//petrinetv3"/>
+</genmodel:GenModel>

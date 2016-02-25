@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+  <extension point="org.gemoc.gemoc_language_workbench.sequential.xdsml">
+    <XDSML_Definition modelLoader_class="org.gemoc.executionframework.extensions.sirius.modelloader.DefaultModelLoader" name="fr.inria.diverse.sample.Petrinetv3" xdsmlFilePath="/fr.inria.diverse.sample.petrinetv3.xdsml/bin/fr/inria/diverse/sample/petrinetv3.melange" />
+  </extension>
+  <extension point="fr.inria.diverse.melange.modeltype">
+    <modeltype id="fr.inria.diverse.sample.PetrinetV3MT" uri="http://petrinetv3mt/" />
+  </extension>
+  <extension point="fr.inria.diverse.melange.language">
+    <language aspects="" entryPoints="" exactType="fr.inria.diverse.sample.PetrinetV3MT" id="fr.inria.diverse.sample.Petrinetv3" uri="petrinetv3">
+      <adapter class="fr.inria.diverse.sample.petrinetv3.adapters.petrinetv3mt.Petrinetv3Adapter" modeltypeId="fr.inria.diverse.sample.PetrinetV3MT" />
+    </language>
+  </extension>
+</plugin>
