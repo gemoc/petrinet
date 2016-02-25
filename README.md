@@ -39,6 +39,11 @@ Trace metamodel:
 
 Evolution of the V2 into a *timed* Petri net language: each transition has temporal boundaries (`tmin` and `tmax`), along with a dynamic `clock`. A transition can only be fired if its clock value is between the boundaries.
 
-Metamodel: TODO
+Metamodel:
+
+![V3 metamodel](https://raw.githubusercontent.com/gemoc/petrinet/master/petrinetv3/fr.inria.diverse.sample.petrinetv3.model/model/petrinetv3%20class%20diagram.png)
+
 
 Trace metamodel: TODO
+
+![V3 trace metamodel](https://raw.githubusercontent.com/gemoc/petrinet/master/petrinetv3/fr.inria.diverse.sample.petrinetv3.trace/model/petrinetv3Trace%20class%20diagram.png)
