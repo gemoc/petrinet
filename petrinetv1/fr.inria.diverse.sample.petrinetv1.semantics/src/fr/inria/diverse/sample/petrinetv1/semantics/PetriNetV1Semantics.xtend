@@ -27,6 +27,7 @@ class NetAspect {
 	 * Transformation rule that runs the Petri net to completion.
 	 */
 	@Main
+	@Step
 	def void run() {
 		_self.initialize
 		var int i = 0;
@@ -57,7 +58,7 @@ class PlaceAspect {
 	/**
 	 * Current amount of tokens in a Place object.
 	 */
-	public int tokens;
+	//public int tokens;
 
 }
 
