@@ -21,13 +21,19 @@ Trace metamodel:
 
 ![V1 trace metamodel](https://raw.githubusercontent.com/gemoc/petrinet/master/petrinetv1/fr.inria.diverse.sample.petrinetv1.trace/model/petrinetv1Trace%20class%20diagram.png)
 
+
 ## V2: Tokens as objects
 
 Evolution of the V1: a class `Tokens` was added to represent tokens instead of using counters.
 
-Metamodel: TODO
+Metamodel:
 
-Trace metamodel: TODO
+![V2 metamodel](https://raw.githubusercontent.com/gemoc/petrinet/master/petrinetv2/fr.inria.diverse.sample.petrinetv2.model/model/petrinetv2%20class%20diagram.png)
+
+Trace metamodel: 
+
+![V2 trace metamodel](https://raw.githubusercontent.com/gemoc/petrinet/master/petrinetv2/fr.inria.diverse.sample.petrinetv2.trace/model/petrinetv2Trace%20class%20diagram.png)
+
 
 ## V3: Timed Petri nets
 
