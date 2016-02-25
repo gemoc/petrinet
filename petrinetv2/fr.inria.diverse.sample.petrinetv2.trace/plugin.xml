@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<!--
+-->
+<plugin>
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <!-- @generated petrinetv2Trace -->
+    <package uri="petrinetv2Trace" class="petrinetv2Trace.Petrinetv2TracePackage" genModel="model/petrinetv2Trace.genmodel" />
+  </extension>
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <!-- @generated petrinetv2Trace -->
+    <package uri="petrinetv2Trace_Steps" class="petrinetv2Trace.Steps.StepsPackage" genModel="model/petrinetv2Trace.genmodel" />
+  </extension>
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <!-- @generated petrinetv2Trace -->
+    <package uri="petrinetv2Trace_States" class="petrinetv2Trace.States.StatesPackage" genModel="model/petrinetv2Trace.genmodel" />
+  </extension>
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <!-- @generated petrinetv2Trace -->
+    <package uri="petrinetv2Trace_petrinetv2" class="petrinetv2Trace.States.petrinetv2.Petrinetv2Package" genModel="model/petrinetv2Trace.genmodel" />
+  </extension>
+  <extension point="org.gemoc.gemoc_language_workbench.engine_addon">
+    <Addon Class="fr.inria.diverse.sample.petrinetv2.trace.tracemanager.Petrinetv2TraceEngineAddon" Default="false" id="fr.inria.diverse.sample.petrinetv2.trace" Name="petrinetv2 MultiDimensional Trace" ShortDescription="MultiDimensional Trace support dedicated to petrinetv2 language" />
+  </extension>
+</plugin>
