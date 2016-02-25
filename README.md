@@ -13,10 +13,12 @@ This repository contains three versions of a Petri net xDSML implemented using t
 
 Simple Petri net language with places and transitions. Arcs are not weighted, hence only one token is removed/added per arc when a transition is fired.
 
-Metamodel: 
+Metamodel:
+
 ![V1 metamodel](https://raw.githubusercontent.com/gemoc/petrinet/master/petrinetv1/fr.inria.diverse.sample.petrinetv1.model/model/petrinetv1%20class%20diagram.png)
 
-Trace metamodel: 
+Trace metamodel:
+
 ![V1 trace metamodel](https://raw.githubusercontent.com/gemoc/petrinet/master/petrinetv1/fr.inria.diverse.sample.petrinetv1.trace/model/petrinetv1Trace%20class%20diagram.png)
 
 ## V2: Tokens as objects
