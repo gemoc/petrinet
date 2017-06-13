@@ -18,12 +18,12 @@ import petrinetv1.Place;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link petrinetv1.impl.PlaceImpl#getName <em>Name</em>}</li>
  *   <li>{@link petrinetv1.impl.PlaceImpl#getInitialTokens <em>Initial Tokens</em>}</li>
  *   <li>{@link petrinetv1.impl.PlaceImpl#getTokens <em>Tokens</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

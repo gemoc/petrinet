@@ -13,11 +13,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link petrinetv1.Net#getPlaces <em>Places</em>}</li>
  *   <li>{@link petrinetv1.Net#getTransitions <em>Transitions</em>}</li>
  * </ul>
- * </p>
  *
  * @see petrinetv1.PetrinetV1Package#getNet()
  * @model

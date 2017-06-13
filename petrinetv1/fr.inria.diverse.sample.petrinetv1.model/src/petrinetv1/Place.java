@@ -11,12 +11,12 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link petrinetv1.Place#getName <em>Name</em>}</li>
  *   <li>{@link petrinetv1.Place#getInitialTokens <em>Initial Tokens</em>}</li>
  *   <li>{@link petrinetv1.Place#getTokens <em>Tokens</em>}</li>
  * </ul>
- * </p>
  *
  * @see petrinetv1.PetrinetV1Package#getPlace()
  * @model

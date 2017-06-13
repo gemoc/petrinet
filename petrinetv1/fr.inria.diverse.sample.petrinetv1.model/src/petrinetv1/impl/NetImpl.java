@@ -27,11 +27,11 @@ import petrinetv1.Transition;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link petrinetv1.impl.NetImpl#getPlaces <em>Places</em>}</li>
  *   <li>{@link petrinetv1.impl.NetImpl#getTransitions <em>Transitions</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

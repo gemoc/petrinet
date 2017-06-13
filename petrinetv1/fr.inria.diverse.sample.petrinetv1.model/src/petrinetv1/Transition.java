@@ -13,12 +13,12 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link petrinetv1.Transition#getInput <em>Input</em>}</li>
  *   <li>{@link petrinetv1.Transition#getOutput <em>Output</em>}</li>
  *   <li>{@link petrinetv1.Transition#getName <em>Name</em>}</li>
  * </ul>
- * </p>
  *
  * @see petrinetv1.PetrinetV1Package#getTransition()
  * @model
@@ -52,7 +52,7 @@ public interface Transition extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Output</em>' reference list.
 	 * @see petrinetv1.PetrinetV1Package#getTransition_Output()
-	 * @model required="true"
+	 * @model
 	 * @generated
 	 */
 	EList<Place> getOutput();

@@ -25,12 +25,12 @@ import petrinetv1.Transition;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link petrinetv1.impl.TransitionImpl#getInput <em>Input</em>}</li>
  *   <li>{@link petrinetv1.impl.TransitionImpl#getOutput <em>Output</em>}</li>
  *   <li>{@link petrinetv1.impl.TransitionImpl#getName <em>Name</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
