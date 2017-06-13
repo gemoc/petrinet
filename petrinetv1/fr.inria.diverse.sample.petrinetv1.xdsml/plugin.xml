@@ -2,7 +2,7 @@
 <?eclipse version="3.4"?>
 <plugin>
   <extension point="org.gemoc.gemoc_language_workbench.sequential.xdsml">
-    <XDSML_Definition modelLoader_class="org.gemoc.executionframework.extensions.sirius.modelloader.DefaultModelLoader" name="fr.inria.diverse.sample.petrinetv1.xdsml.XPetrinetv1" xdsmlFilePath="/fr.inria.diverse.sample.petrinetv1.xdsml/src/fr/inria/diverse/sample/petrinetv1/xdsml/petrinetv1.melange" />
+    <XDSML_Definition modelLoader_class="org.gemoc.executionframework.extensions.sirius.modelloader.DefaultModelLoader" name="fr.inria.diverse.sample.petrinetv1.xdsml.XPetrinetv1" xdsmlFilePath="/fr.inria.diverse.sample.petrinetv1.xdsml/bin/fr/inria/diverse/sample/petrinetv1/xdsml/petrinetv1.melange" />
   </extension>
   <extension point="org.eclipse.emf.ecore.generated_package">
     <!-- @generated XPetrinetv1MT -->
@@ -16,7 +16,6 @@
   </extension>
   <extension point="fr.inria.diverse.melange.language">
     <language aspects="" entryPoints="" exactType="fr.inria.diverse.sample.petrinetv1.xdsml.Petrinetv1MT" id="fr.inria.diverse.sample.petrinetv1.xdsml.Petrinetv1" uri="petrinetv1" />
-    <language aspects="Transition:fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1.aspects.TransitionAspect;Net:fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1.aspects.NetAspect;Place:fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1.aspects.PlaceAspect" entryPoints="fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1.aspects.NetAspect.run(fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1.petrinetv1.Net)" exactType="fr.inria.diverse.sample.petrinetv1.xdsml.XPetrinetv1MT" id="fr.inria.diverse.sample.petrinetv1.xdsml.XPetrinetv1" uri="http://fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1/petrinetv1/">
-    </language>
+    <language aspects="Transition:fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1.aspects.TransitionAspect;Net:fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1.aspects.NetAspect;Place:fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1.aspects.PlaceAspect" entryPoints="fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1.aspects.NetAspect.run(fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1.petrinetv1.Net)" exactType="fr.inria.diverse.sample.petrinetv1.xdsml.XPetrinetv1MT" id="fr.inria.diverse.sample.petrinetv1.xdsml.XPetrinetv1" uri="http://fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1/petrinetv1/" />
   </extension>
 </plugin>

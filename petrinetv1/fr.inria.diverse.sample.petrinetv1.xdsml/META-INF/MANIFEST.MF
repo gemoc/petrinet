@@ -27,4 +27,3 @@ Require-Bundle: org.eclipse.xtend.lib;bundle-version="2.7.0";visibility:="privat
  fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1
 Bundle-ManifestVersion: 2
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-
