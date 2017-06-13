@@ -1,24 +1,24 @@
 package fr.inria.diverse.sample.petrinetv1.semantics
 
 import fr.inria.diverse.k3.al.annotationprocessor.Aspect
-
-import static extension fr.inria.diverse.sample.petrinetv1.semantics.TransitionAspect.*
+import fr.inria.diverse.k3.al.annotationprocessor.InitializeModel
 import fr.inria.diverse.k3.al.annotationprocessor.Main
 import fr.inria.diverse.k3.al.annotationprocessor.Step
+import java.util.List
 import petrinetv1.Net
-import petrinetv1.Transition
 import petrinetv1.Place
+import petrinetv1.Transition
+
+import static extension fr.inria.diverse.sample.petrinetv1.semantics.TransitionAspect.*
 
 @Aspect(className=Net)
 class NetAspect {
 
 	/**
-	 * Initialization function to be called after creating 
-	 * the objects of the executable model.
 	 * Each place is given as many tokens as specified in initialTokens.
 	 */
-	@Step
-	def void initialize() {
+	@InitializeModel
+	def void initialize(List<String> args) {
 		for (place : _self.places)
 			place.tokens = place.initialTokens
 	}
@@ -29,7 +29,6 @@ class NetAspect {
 	@Main
 	@Step
 	def void run() {
-		_self.initialize
 		var int i = 0;
 		while (true) {
 			val enabledTransition = _self.transitions.findFirst[t|t.isEnabled]
@@ -58,7 +57,7 @@ class PlaceAspect {
 	/**
 	 * Current amount of tokens in a Place object.
 	 */
-	//public int tokens;
+	public int tokens;
 
 }
 
