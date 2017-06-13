@@ -2,14 +2,21 @@
 <?eclipse version="3.4"?>
 <plugin>
   <extension point="org.gemoc.gemoc_language_workbench.sequential.xdsml">
-    <XDSML_Definition modelLoader_class="org.gemoc.executionframework.extensions.sirius.modelloader.DefaultModelLoader" name="fr.inria.diverse.sample.Petrinetv1" xdsmlFilePath="/fr.inria.diverse.sample.petrinetv1.xdsml/bin/fr/inria/diverse/sample/petrinetv1.melange" />
+    <XDSML_Definition modelLoader_class="org.gemoc.executionframework.extensions.sirius.modelloader.DefaultModelLoader" name="fr.inria.diverse.sample.petrinetv1.xdsml.XPetrinetv1" xdsmlFilePath="/fr.inria.diverse.sample.petrinetv1.xdsml/src/fr/inria/diverse/sample/petrinetv1/xdsml/petrinetv1.melange" />
+  </extension>
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <!-- @generated XPetrinetv1MT -->
+    <package class="fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1mt.petrinetv1.Petrinetv1Package" genModel="model-gen/XPetrinetv1MT.genmodel" uri="http://fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1mt/petrinetv1/" />
   </extension>
   <extension point="fr.inria.diverse.melange.modeltype">
-    <modeltype id="fr.inria.diverse.sample.PetrinetV1MT" uri="http://petrinetv1mt/" />
+    <modeltype id="fr.inria.diverse.sample.petrinetv1.xdsml.Petrinetv1MT" uri="http://fr.inria.diverse.sample.petrinetv1.xdsml.petrinetv1mt/" />
+    <modeltype id="fr.inria.diverse.sample.petrinetv1.xdsml.XPetrinetv1MT" uri="http://fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1mt/">
+      <subtyping modeltypeId="fr.inria.diverse.sample.petrinetv1.xdsml.Petrinetv1MT" />
+    </modeltype>
   </extension>
   <extension point="fr.inria.diverse.melange.language">
-    <language aspects="Transition:fr.inria.diverse.sample.petrinetv1.semantics.TransitionAspect;Net:fr.inria.diverse.sample.petrinetv1.semantics.NetAspect;Place:fr.inria.diverse.sample.petrinetv1.semantics.PlaceAspect" entryPoints="fr.inria.diverse.sample.petrinetv1.semantics.NetAspect.run(petrinetv1.Net)" exactType="fr.inria.diverse.sample.PetrinetV1MT" id="fr.inria.diverse.sample.Petrinetv1" uri="http://petrinetv1mt/">
-      <adapter class="fr.inria.diverse.sample.petrinetv1.adapters.petrinetv1mt.Petrinetv1Adapter" modeltypeId="fr.inria.diverse.sample.PetrinetV1MT" />
+    <language aspects="" entryPoints="" exactType="fr.inria.diverse.sample.petrinetv1.xdsml.Petrinetv1MT" id="fr.inria.diverse.sample.petrinetv1.xdsml.Petrinetv1" uri="petrinetv1" />
+    <language aspects="Transition:fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1.aspects.TransitionAspect;Net:fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1.aspects.NetAspect;Place:fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1.aspects.PlaceAspect" entryPoints="fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1.aspects.NetAspect.run(fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1.petrinetv1.Net)" exactType="fr.inria.diverse.sample.petrinetv1.xdsml.XPetrinetv1MT" id="fr.inria.diverse.sample.petrinetv1.xdsml.XPetrinetv1" uri="http://fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1/petrinetv1/">
     </language>
   </extension>
 </plugin>

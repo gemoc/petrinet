@@ -1,11 +1,11 @@
-package fr.inria.diverse.sample
+package fr.inria.diverse.sample.petrinetv1.xdsml
 
-language Petrinetv1 {
+external language Petrinetv1 {
 	syntax "platform:/resource//fr.inria.diverse.sample.petrinetv1.model/model/petrinetv1.ecore"
-	
+}
+
+language XPetrinetv1 inherits Petrinetv1{
 	with fr.inria.diverse.sample.petrinetv1.semantics.NetAspect
 	with fr.inria.diverse.sample.petrinetv1.semantics.TransitionAspect
 	with fr.inria.diverse.sample.petrinetv1.semantics.PlaceAspect
-
-	exactType PetrinetV1MT 
 }
