@@ -10,6 +10,7 @@ import fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1mt.petrinetv1.Transit
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.EcorePackage;
@@ -284,7 +285,8 @@ public class Petrinetv1PackageImpl extends EPackageImpl implements Petrinetv1Pac
 		initEReference(getNet_Places(), this.getPlace(), null, "places", null, 0, -1, Net.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getNet_Transitions(), this.getTransition(), null, "transitions", null, 0, -1, Net.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		addEOperation(netEClass, null, "initialize", 0, 1, IS_UNIQUE, IS_ORDERED);
+		EOperation op = addEOperation(netEClass, null, "initialize", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEString(), "args", 0, -1, IS_UNIQUE, IS_ORDERED);
 
 		addEOperation(netEClass, null, "run", 0, 1, IS_UNIQUE, IS_ORDERED);
 

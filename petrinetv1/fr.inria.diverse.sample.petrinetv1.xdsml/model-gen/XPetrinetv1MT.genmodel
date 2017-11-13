@@ -13,6 +13,9 @@
       </genFeatures>
       <genOperations>
         <ecoreOperation href="XPetrinetv1MT.ecore#//Net/initialize"/>
+        <genParameters>
+          <ecoreParameter href="XPetrinetv1MT.ecore#//Net/initialize/args"/>
+        </genParameters>
       </genOperations>
       <genOperations>
         <ecoreOperation href="XPetrinetv1MT.ecore#//Net/run"/>

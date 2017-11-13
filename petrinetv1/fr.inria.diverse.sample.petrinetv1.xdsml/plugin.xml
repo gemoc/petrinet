@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?eclipse version="3.4"?>
 <plugin>
-  <extension point="org.gemoc.gemoc_language_workbench.sequential.xdsml">
-    <XDSML_Definition modelLoader_class="org.gemoc.executionframework.extensions.sirius.modelloader.DefaultModelLoader" name="fr.inria.diverse.sample.petrinetv1.xdsml.XPetrinetv1" xdsmlFilePath="/fr.inria.diverse.sample.petrinetv1.xdsml/bin/fr/inria/diverse/sample/petrinetv1/xdsml/petrinetv1.melange" />
+  <extension point="org.eclipse.gemoc.gemoc_language_workbench.sequential.xdsml">
+    <XDSML_Definition modelLoader_class="org.eclipse.gemoc.executionframework.extensions.sirius.modelloader.DefaultModelLoader" name="fr.inria.diverse.sample.petrinetv1.xdsml.XPetrinetv1" xdsmlFilePath="/fr.inria.diverse.sample.petrinetv1.xdsml/src/fr/inria/diverse/sample/petrinetv1/xdsml/petrinetv1.melange" />
   </extension>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <!-- @generated XPetrinetv1MT -->
-    <package class="fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1mt.petrinetv1.Petrinetv1Package" genModel="model-gen/XPetrinetv1MT.genmodel" uri="http://fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1mt/petrinetv1/" />
-  </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XPetrinetv1MT -->
+      <package
+            uri="http://fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1mt/petrinetv1/"
+            class="fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1mt.petrinetv1.Petrinetv1Package"
+            genModel="model-gen/XPetrinetv1MT.genmodel"/>
+   </extension>
   <extension point="fr.inria.diverse.melange.modeltype">
     <modeltype id="fr.inria.diverse.sample.petrinetv1.xdsml.Petrinetv1MT" uri="http://fr.inria.diverse.sample.petrinetv1.xdsml.petrinetv1mt/" />
     <modeltype id="fr.inria.diverse.sample.petrinetv1.xdsml.XPetrinetv1MT" uri="http://fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1mt/">

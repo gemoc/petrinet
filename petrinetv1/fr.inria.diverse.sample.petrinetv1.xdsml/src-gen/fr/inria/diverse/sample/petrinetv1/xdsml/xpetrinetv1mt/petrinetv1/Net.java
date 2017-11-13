@@ -59,10 +59,10 @@ public interface Net extends EObject {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model
+	 * @model argsMany="true"
 	 * @generated
 	 */
-	void initialize();
+	void initialize(EList<String> args);
 
 	/**
 	 * <!-- begin-user-doc -->

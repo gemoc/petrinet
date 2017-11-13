@@ -3,6 +3,9 @@
   <eClassifiers xsi:type="ecore:EClass" name="Net">
     <eOperations name="initialize">
       <eAnnotations source="aspect"/>
+      <eParameters name="args" upperBound="-1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eParameters>
     </eOperations>
     <eOperations name="run">
       <eAnnotations source="aspect"/>

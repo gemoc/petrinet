@@ -29,13 +29,10 @@ class NetAspect {
 	@Main
 	@Step
 	def void run() {
-		var int i = 0;
 		while (true) {
 			val enabledTransition = _self.transitions.findFirst[t|t.isEnabled]
 			if (enabledTransition != null) {
 				enabledTransition.fire
-				println(i++)
-				println(_self.markingToString)
 			} else
 				return
 		}
