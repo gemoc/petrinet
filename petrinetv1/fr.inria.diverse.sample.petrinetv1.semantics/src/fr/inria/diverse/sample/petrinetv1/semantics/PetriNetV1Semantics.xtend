@@ -31,7 +31,7 @@ class NetAspect {
 	def void run() {
 		while (true) {
 			val enabledTransition = _self.transitions.findFirst[t|t.isEnabled]
-			if (enabledTransition != null) {
+			if (enabledTransition !== null) {
 				enabledTransition.fire
 			} else
 				return
