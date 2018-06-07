@@ -1,8 +1,5 @@
 Manifest-Version: 1.0
 Bundle-SymbolicName: fr.inria.diverse.sample.petrinetv1.xdsml; singleton:=true
-Export-Package: fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1mt.petrinetv1,
- fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1mt.petrinetv1.impl,
- fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1mt.petrinetv1.util
 Bundle-Name: fr.inria.diverse.sample.petrinetv1.xdsml
 Bundle-Version: 1.0.0
 Bundle-ClassPath: .

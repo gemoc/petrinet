@@ -1,6 +1,5 @@
 package fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1.aspects;
 
-import com.google.common.base.Objects;
 import fr.inria.diverse.k3.al.annotationprocessor.Aspect;
 import fr.inria.diverse.k3.al.annotationprocessor.InitializeModel;
 import fr.inria.diverse.k3.al.annotationprocessor.Main;
@@ -76,8 +75,7 @@ public class NetAspect {
           return Boolean.valueOf(TransitionAspect.isEnabled(t));
         };
         final Transition enabledTransition = IterableExtensions.<Transition>findFirst(_self.getTransitions(), _function);
-        boolean _notEquals = (!Objects.equal(enabledTransition, null));
-        if (_notEquals) {
+        if ((enabledTransition != null)) {
           TransitionAspect.fire(enabledTransition);
         } else {
           return;
