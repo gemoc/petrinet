@@ -72,7 +72,7 @@ public class Petrinetv1PackageImpl extends EPackageImpl implements Petrinetv1Pac
 
 	/**
 	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
-	 * 
+	 *
 	 * <p>This method is used to initialize {@link Petrinetv1Package#eINSTANCE} when that field is accessed.
 	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
 	 * <!-- begin-user-doc -->
@@ -86,7 +86,8 @@ public class Petrinetv1PackageImpl extends EPackageImpl implements Petrinetv1Pac
 		if (isInited) return (Petrinetv1Package)EPackage.Registry.INSTANCE.getEPackage(Petrinetv1Package.eNS_URI);
 
 		// Obtain or create and register package
-		Petrinetv1PackageImpl thePetrinetv1Package = (Petrinetv1PackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof Petrinetv1PackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new Petrinetv1PackageImpl());
+		Object registeredPetrinetv1Package = EPackage.Registry.INSTANCE.get(eNS_URI);
+		Petrinetv1PackageImpl thePetrinetv1Package = registeredPetrinetv1Package instanceof Petrinetv1PackageImpl ? (Petrinetv1PackageImpl)registeredPetrinetv1Package : new Petrinetv1PackageImpl();
 
 		isInited = true;
 
@@ -99,7 +100,6 @@ public class Petrinetv1PackageImpl extends EPackageImpl implements Petrinetv1Pac
 		// Mark meta-data to indicate it can't be changed
 		thePetrinetv1Package.freeze();
 
-  
 		// Update the registry and return the package
 		EPackage.Registry.INSTANCE.put(Petrinetv1Package.eNS_URI, thePetrinetv1Package);
 		return thePetrinetv1Package;
@@ -317,35 +317,35 @@ public class Petrinetv1PackageImpl extends EPackageImpl implements Petrinetv1Pac
 	 * @generated
 	 */
 	protected void createAspectAnnotations() {
-		String source = "aspect";	
+		String source = "aspect";
 		addAnnotation
-		  (netEClass.getEOperations().get(0), 
-		   source, 
+		  (netEClass.getEOperations().get(0),
+		   source,
 		   new String[] {
-		   });	
+		   });
 		addAnnotation
-		  (netEClass.getEOperations().get(1), 
-		   source, 
+		  (netEClass.getEOperations().get(1),
+		   source,
 		   new String[] {
-		   });	
+		   });
 		addAnnotation
-		  (netEClass.getEOperations().get(2), 
-		   source, 
+		  (netEClass.getEOperations().get(2),
+		   source,
 		   new String[] {
-		   });	
+		   });
 		addAnnotation
-		  (transitionEClass.getEOperations().get(0), 
-		   source, 
+		  (transitionEClass.getEOperations().get(0),
+		   source,
 		   new String[] {
-		   });	
+		   });
 		addAnnotation
-		  (transitionEClass.getEOperations().get(1), 
-		   source, 
+		  (transitionEClass.getEOperations().get(1),
+		   source,
 		   new String[] {
-		   });	
+		   });
 		addAnnotation
-		  (getPlace_Tokens(), 
-		   source, 
+		  (getPlace_Tokens(),
+		   source,
 		   new String[] {
 		   });
 	}

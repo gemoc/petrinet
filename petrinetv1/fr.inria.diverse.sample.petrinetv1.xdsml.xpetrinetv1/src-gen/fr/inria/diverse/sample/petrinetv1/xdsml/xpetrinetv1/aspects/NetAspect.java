@@ -24,7 +24,10 @@ public class NetAspect {
   @InitializeModel
   public static void initialize(final Net _self, final List<String> args) {
     final fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1.aspects.NetAspectNetAspectProperties _self_ = fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1.aspects.NetAspectNetAspectContext.getSelf(_self);
-    _privk3_initialize(_self_, _self,args);;
+    // #DispatchPointCut_before# void initialize(List<String>)
+    if (_self instanceof fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1.petrinetv1.Net){
+    	fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1.aspects.NetAspect._privk3_initialize(_self_, (fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1.petrinetv1.Net)_self,args);
+    };
   }
   
   /**

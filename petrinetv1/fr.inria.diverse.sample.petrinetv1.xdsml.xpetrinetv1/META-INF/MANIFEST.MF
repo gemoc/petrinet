@@ -1,12 +1,11 @@
 Manifest-Version: 1.0
-Bundle-SymbolicName: fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1;singleton:=true
-Export-Package: fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1.aspects,
- fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1.petrinetv1,
- fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1.petrinetv1.impl,
- fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1.petrinetv1.util
+Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
+Bundle-SymbolicName: fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1;singleton:=true
+Automatic-Module-Name: fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1
 Bundle-Version: 0.1.0
 Bundle-ClassPath: .
+Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:="reexport",
@@ -14,7 +13,9 @@ Require-Bundle: org.eclipse.core.runtime,
  fr.inria.diverse.melange,
  org.eclipse.xtext.xbase.lib,
  org.eclipse.gemoc.executionframework.extensions.sirius;bundle-version=0.0.0;visibility:=reexport
-Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
+Export-Package: fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1.aspects,
+ fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1.petrinetv1,
+ fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1.petrinetv1.impl,
+ fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1.petrinetv1.util
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
-Bundle-Vendor: %providerName
