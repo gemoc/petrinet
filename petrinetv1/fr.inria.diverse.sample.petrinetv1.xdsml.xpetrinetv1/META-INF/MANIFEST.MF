@@ -12,7 +12,7 @@ Require-Bundle: org.eclipse.core.runtime,
  fr.inria.diverse.k3.al.annotationprocessor.plugin,
  fr.inria.diverse.melange,
  org.eclipse.xtext.xbase.lib,
- org.eclipse.gemoc.executionframework.extensions.sirius;bundle-version=0.0.0;visibility:=reexport
+ org.eclipse.gemoc.executionframework.extensions.sirius;bundle-version="0.0.0";visibility:=reexport
 Bundle-ActivationPolicy: lazy
 Export-Package: fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1.aspects,
  fr.inria.diverse.sample.petrinetv1.xdsml.xpetrinetv1.petrinetv1,
